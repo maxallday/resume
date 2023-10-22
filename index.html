@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <title>Mon compentences</title>
+  <link rel="icon" type="image/x-icon" href="image/page.png">
+</head>
+<script>
+
+  function displayWord() {
+   var words = document.getElementsByClassName("toggle");
+   var wordCounter = 0;
+   
+   setInterval(updateWord,1000);
+   
+   function updateWord() {
+     if (wordCounter >= words.length) wordCounter = 0;
+     for(var i = 0; i < words.length; i++) {
+       words[i].classList.remove('active');
+     }
+     words[wordCounter].classList.add('active');
+      wordCounter++;
+  
+    }
+ }
+ displayWord();// Add a semicolon here
+</script>
+
+<body>
+  <!-- PAGE ABOUT -->
+  <header id="about">
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="welcome-section" class="container">
+      <h1 id="title">I am Maxwell</h1>
+      <p class="lead" style="color: rgb(80, 198, 155);"><em>Frontend Developer</em></p>
+      <p class="lead"><em>I build efficient,user friendly products for the web , feel free to contact me and let’s work together.</em></p>
+    </div>
+  </header>
+    
+  <!--skills section-->
+  <section class="skills" id="skills">
+    <h1 id="caption">Skills gained </h1><br>
+      <div id="bottom-line"></div>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="image/js.png"
+        loading="lazy" class="fi fi-rr-css3 icon icon-card">
+        
+        <img
+          src="image/css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="image/bootstrap.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="image/html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="image/react.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT SECTION -->
+  <section id="projects">
+    <div class="project-tile" id="work">
+      <h1 id="caption">"These are some of my projects"</h1><br>
+      <div id="bottom-line"></div>
+      <div class="projects">
+        <div class="box">
+          <a target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page">
+            <img src="https://i.ibb.co/qmLXkp0/Captura-2021-05-07-23-53-46.png" alt="Tribute Page Project Thumbnail"" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-personal-portfolio-webpage-project/build-a-personal-portfolio-webpage" alt="project-img" class="project-img">
+            <img src="img/project-2.JPG" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Personal Portfolio
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">
+            <img src="img/project-3.JPG" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Documentation Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page">
+            <img src="project-card-img" src="https://i.ibb.co/Tk5VSF0/Captura-2021-05-07-23-53-10.png" alt="Landing Page Project Thumbnail" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Landing Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://sites.google.com/view/dev-afif/">
+            <img src="img/project-5.JPG" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Personal Site
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
+            <img src="https://i.ibb.co/K2gN9vm/Captura-2021-05-07-23-53-32.png" alt="Survey Form Project Thumbnail" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Survey Form
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <a href="https://github.com/maxallday" class="btn">Show More</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <h1>
+        Let's <span class="toggle active" >connect</span>
+             <span class="toggle">collaborate</span>
+              <span class="toggle">create</span>
+              <span class="toggle">discover</span>
+              <span class="toggle">develop</span>
+              <span class="toggle">share</span>
+              <span class="toggle"> work </span>
+        
+      </h1>
+      <p>Need a hand with your project? let’s connect!</p>
+      <div class="social">
+        <div>
+          <a target="_blank" href="https://www.linkedin.com/in/odiga-maxwell-13b965291/  ">
+            <i class="fab fa-linkedin fa-2x"></i>
+            
+          </a>
+          <a id="profile-link" target="_blank" href="https://www.github.com/maxallday"target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          
+          </a>
+          <a target="_blank" href="https://www.freecodecamp.org/learn" target="_blank" >
+            <i class="fab fa-free-code-camp fa-2x"></i>
+            
+          </a>
+          <a href="mailto: modiga58@gmail.com">
+            <i class="fas fa-envelope-open-text fa-2x"></i>
+    
+          </a>
+          <a href="https://twitter.com"target="_blank" >
+            <i class="fab fa-twitter fa-2x"></i>
+           
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer id="main-footer">
+    <div class="container">
+      <p >&copy; Copyright<span id="signature"> Modiga </span> 2023</p>
+      <p id="creator">This site recreated by help of&nbsp;<a  href="https://www.freecodecamp.org/learn ">         <i class="fab fa-free-code-camp fa-2x"></i></a></p>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
